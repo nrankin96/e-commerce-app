@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+import { useEffect } from "react";
+import Women from "./components/Products";
+import Mens from "./components/Mens";
+import Footer from "./components/Footer";
+
+
 
 function App() {
+useEffect(() => {
+  document.title = 'Sewn Apparel'
+}, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <NavBar />
+      <Hero />
+      <Women />
+      <Mens/>
+      <Footer />
+     
     </div>
   );
 }
