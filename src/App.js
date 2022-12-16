@@ -14,7 +14,7 @@ useEffect(() => {
 }, [])
 
   return (
-    <div className="App">
+    <div className="App ">
       <Header />
       <NavBar />
       <Hero />

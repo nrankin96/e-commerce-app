@@ -5,10 +5,8 @@ function Header() {
  
   return (
     <>
-        <div className='flex bg-slate-500 justify-between p-3'>
-            <button className='font-semibold '> &lt;</button>
-            <p>Free shipping on orders $100+ </p>
-            <button className='font-semibold'>&gt;</button>
+        <div className=' bg-[#92A1B3] p-3'>
+            <p className='text-center text-gray-100'>Free shipping on orders $100+ </p>
         </div>
     </>
   )
